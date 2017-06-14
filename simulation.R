@@ -2,7 +2,8 @@
 # Simulation
 # 
 
-setwd("~/OneDrive/Models/MacGregor/MacGregor_model1")
+# set the working directory and put 'files' folder into it along with this script and 'sim_plots' folder
+setwd()
 
 source('files/MacGregor_2.R', echo=F)
 
