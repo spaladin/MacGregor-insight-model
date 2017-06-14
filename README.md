@@ -1,0 +1,1 @@
+# MacGregor-insight-model
