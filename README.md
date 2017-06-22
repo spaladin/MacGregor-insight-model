@@ -9,4 +9,4 @@ To run the model you need to download 'files' folder and 'sim.R' script. You als
 
 # FOW-ratings simulation
 
-simulation_meta.R file allows to implement FOW ratings for 9-dot problem on the basis of MacGregor model.
+'simulation_meta.R' script allows to implement FOW ratings for 9-dot problem on the basis of MacGregor model.
