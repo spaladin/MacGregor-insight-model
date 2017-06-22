@@ -83,6 +83,9 @@ sim_macgregor <- function(dots_number = 9, attempts = 20, lookahead, k = 1){
       # look for unmarked dots with the probability m
       if(sample(c(1,0),1, prob = c(m,1-m))){
         
+        # save criterion 
+        solutions$criterion <- c(solutions$criterion, (criterion/2) + rnorm(1, 0, 2))
+        
         # generate all possible moves
         operators <- all_operators
         
@@ -113,7 +116,10 @@ sim_macgregor <- function(dots_number = 9, attempts = 20, lookahead, k = 1){
         if (value_of_the_best_available_move2 > value_of_the_best_available_move){
           move <- selected_moves2[[best_move2]] # choose move finally
         } else move <- selected_moves[[best_move]] # choose move finally
-      } else move <- selected_moves[[best_move]] # choose move finally
+      } else {
+        move <- selected_moves[[best_move]]
+        solutions$criterion <- c(solutions$criterion, criterion + rnorm(1, 0, 2))
+      } # choose move finally
       
       # compute all values nessesary for the next move
       lines_lost <- lines_lost - length(move)
@@ -131,11 +137,3 @@ sim_macgregor <- function(dots_number = 9, attempts = 20, lookahead, k = 1){
   }
   return(solutions)
 }
-
-
-
-
-
-
-
-
