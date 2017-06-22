@@ -7,3 +7,6 @@ MacGregor, J. N., Ormerod, T. C., & Chronicle, E. P. (2001). Information process
 Model produces solution attempts to 9- and 11-dot problems. 
 To run the model you need to download 'files' folder and 'sim.R' script. You also need to download or create 'sim_plots' folder in your working directory. Next steps are described in the 'sim.R' script.
 
+# FOW-ratings simulation
+
+'simulation_meta.R' script allows to implement FOW ratings for 9-dot problem on the basis of MacGregor model.
